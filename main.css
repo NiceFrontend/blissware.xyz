@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+/* if any code in here looks weird or formatted in a strange way some third party changed it 
+Cacti4#1902 
+*/
+:root{
+    --gradient: linear-gradient(to right,#636efe 40%, #D1A3E5 70%);
+    --gradient-2: linear-gradient(to right,#636efe 20%, #D1A3E5 80%);
+    --bg: #100f0ff8;
+    --grey: rgb(134, 134, 134);
+}
+
+body{
+ background: var(--bg);
+ font-family: 'Montserrat', sans-serif;
+ font-size: 16px;
+ color: #fff;
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+
+.content-centered {
+ margin-top: 30vh
+}
+
+.big-txt{
+ font-size: 4rem;
+ font-weight: 700;
+ background: var(--gradient);
+ -webkit-background-clip: text;
+ color: transparent;
+ margin-bottom: 0;
+}
+
+.grey-txt{
+ font-weight: 600;
+ color: var(--grey);
+}
+.big-btn{
+ color: #fff;
+ text-decoration: none;
+ padding: 10px 17px;
+ background-color: #636efe;
+ margin: 10px;
+ border-radius: 7px;
+ font-weight: bold;
+}
+
+.btn-2{
+ background-color: #D1A3E5;
+}
+
+.topnav{
+ display: flex;
+ align-items: center;
+}
+
+.txt-top{
+ margin-left: 3rem;
+ background: var(--gradient-2);
+ -webkit-background-clip: text;
+ color: transparent;
+}
+
+.links{
+ display: flex;
+ margin-left: auto;
+ margin-right: 15%;
+}
+
+.link-top{
+ color: #fff;
+ text-decoration: none;
+ color: var(--grey);
+}
+
+.link-top:hover{
+ text-decoration: underline;
+}
+
+.credit{
+ color: var(--grey);
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ font-weight: bold;
+}
+
+@media (max-width: 400px){
+ .big-txt{
+  font-size: 3.2rem;
+ }
+ .big-btn{
+  margin: 5px;
+ }
+ .topnav{
+  display: none;
+ }
+}
+
+.margin{
+    display: inline-block;
+    margin-bottom: 1.7rem;
+}
